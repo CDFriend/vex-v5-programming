@@ -3,7 +3,7 @@ before_install:
   - git config user.email "builds@travis-ci.org"
 
 script:
-  - git remote add origin-wiki ssh://${GITHUB_UNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_UNAME}/vex-v5-programming.wiki > /dev/null 2>&1
+  - git remote add origin-wiki https://${GITHUB_UNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_UNAME}/vex-v5-programming.wiki > /dev/null 2>&1
   - git push -q origin-wiki master
 
 env:
