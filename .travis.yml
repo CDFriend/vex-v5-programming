@@ -1,0 +1,12 @@
+before_install:
+    - git config user.name "Travis CI"
+    - git config user.email "builds@travis-ci.org"
+
+script:
+    - git remote add origin-wiki ssh://$(GITHUB_TOKEN)@github.com/CDFriend/vex-v5-programming.wiki > /dev/null 2>&1
+    - git push origin-wiki master
+
+env:
+  global:
+    secure: gzH5pnv3gGU9xqBzBL+FudZlRYVfv0OhRPC5eO5S+Xt5j50l9sa26/KoJB0TGQW/ZUvDeF3//AMJL0a+QbP6Br2qo0xs/5QQFGNKRcoZ7EOMz7ySBUyxZM8AYYMR6yAZ0gx9e3v/ZjymwBN4pCD0XTnoiN6Esk8oo8Vv6T5J4EVd3x7CE4mwKlC2Q7BCjXE1W5/vH7HdDZtdoXxCMTguNM1qvscdApoFy0ZuZdl1V86l9Xy8PSdhWI5Iuv8N93LhOpSCPQIBnMjK2ymWRY+wXP8njOC3mIAhaowJMEWJjP9eHdHYSzFp+bLwG2OW60MM/UtYoZalHK1ZAOlaEfFunln0CammP+FfVAMFuCgk58Dg/NTA8D+XSbu4Vx2G0ROSlDa3OeWC0+2VwCzh5VQQsFovSorpAB8nivSADJCdNCcWayHISASKB8PCUmAOzvQ0RMItXWFBKIIKI1jqAtAsUFNlz6shrPo25oMIEP0tnpjACUZcQQ8aPwq7RfLZ5XfoDPmElCArRUhd7YFaRzUkAwnaINUxJYj0PusConlIWw5D6Y+Ed+U4FpQmim5NeswzgllihZa6qIg/2YQxITuhhwuxUy2ccdbUmel7FXsA/rans9YLbNL2Y9BdhSscWtUW8hu9r+oDVmY4rVJKAtZ41y0/q0Wi/23nyfCKbFoUl5o=
+
