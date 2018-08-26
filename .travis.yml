@@ -7,7 +7,9 @@ script:
   - git push -q origin-wiki master
 
 env:
-  - GITHUB_UNAME=CDFriend
   global:
     secure: psAGuImarNVzyzvr7H9UuET4eRVHN59t0QzkQkt3ahaktMuMQX9e+XGAEMl8Gl3Jv52L7aYkWHctoZTYpn8ZGYEjNb+wrJkLvaWJUZ2l0ykWbD6sJ+eQ69fFLlPhvhilYd4fQxENDwaFToZtSlKDQq9q721ooZoZM5ORTtBEFxTw1aXFUitxVAVIqvlxSSk0yix8kvtwhbJClQF71V0rLX53/4yNU7DLESUKk5GyCsNiOkK6vQkNEyWB1nJ+I1tJ6T3QJ1eteh//XsCb9+wxizGbfcggavdsDkK+UCykdazEuDEW2stx2/xI+G88lrs6uQY6P+eTqeHqIugWHb98IXBRJvmeZcdG4HBikkSsVpqIdbenJ/OEmqRHdySORU/NYI7XAJFK3jVo/RDPnuzSbALnHNJxZTtlX15OhZmWwcWXtvNE1mJS4caL5wKBwyxieYz+0FqMwRYJ8JGMmHtft2n5r5wSoy/4VYzt2HMgpgQ3z8HZ+IWcaMelOGZnrp9JsncGcuQln1xIXlJMhj/gOipr5JkHXtBOgJh3cFjoX3x7Bq5CL0lVbgYCm3Q2XZERPnws1L8KVTNNL4UTgzbL4RIyRxnnEJ5FWtuu47+1CTH7J8kKhUIfQNfUa3FQlEGeJR5JHqnpbmcEqA70qyux+RdhMsHX2lnJeKa7kVG2cBw=
+  matrix:
+    - GITHUB_UNAME=CDFriend
+
 
