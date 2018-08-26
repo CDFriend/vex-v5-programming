@@ -1,5 +1,3 @@
-# Getting Started With VEX Coding Studio
-
 VEX coding studio is the new development environment (editor) for V5. It's designed to be the successor to ROBOTC.
 
 ## What's New?
