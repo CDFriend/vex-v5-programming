@@ -49,4 +49,46 @@ To change the port number for a component, click on the number sign and choose a
 
 To switch to your project code, click the "text" button in the top-right corner of the screen.
 
-![graphical robot setup](images/getting-started-with-vcs/vcs-text.png)
+![VCS text view](images/getting-started-with-vcs/vcs-text.png)
+
+## Configuring Your Robot in C++ Pro Mode
+
+When you start a C++ pro project, you should be able to see two files: `robot_config.h` and `main.cpp`.
+
+In C++, a `.h` file is a **header file** - typically this is where you define information about a `.cpp` file, or **implementation**, that other parts of your program can use. In our case, we use it to define the objects (motors and sensors) out program needs to run.
+
+![VCS Pro Robot Config](images/getting-started-with-vcs/vcs-pro-motor.png)
+
+To define our motors and sensors in C++, we construct **objects** (this might start sounding familiar if you've written Java before). A constructor is a function which takes some information to make an object. For example, to make a motor, we need to give a port number to the constructor.
+
+```c++
+vex::motor driveMotor(vex::PORT1);
+```
+
+A basic robot configuration might look like this:
+
+```c++
+vex::brain Brain;
+
+// Drive Motors
+vex::motor BLMotor(vex::PORT1);
+vex::motor BRMotor(vex::PORT2);
+vex::motor FLMotor(vex::PORT3);
+vex::motor FRMotor(vex::PORT4);
+
+// Sensors
+vex::bumper FrontBumper(Brain.ThreeWirePort.A);
+```
+
+Once we've defined our robot configuration in the header file, we can use our motors and sensors like variables in **main.cpp**.
+
+```c++
+#include "robot-config.h"
+          
+int main() {
+    BRMotor.spin(vex::directionType::fwd);
+    BLMotor.spin(vex::directionType::fwd);
+    FRMotor.spin(vex::directionType::fwd);
+    FLMotor.spin(vex::directionType::fwd);
+}
+```
