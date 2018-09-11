@@ -17,7 +17,7 @@ You can now define all your robot's motors and sensors using a graphical interfa
 
 ![graphical robot setup](images/getting-started-with-vcs/vcs-graphical-robot-setup.png)
 
-**Switched from C to C++**
+**Switching from C to C++**
 
 With V5, VEX switched the main programming language from C to C++.
 
