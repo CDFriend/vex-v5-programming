@@ -2,7 +2,7 @@
 
 Welcome to the vex-v5-programming wiki! This will be our main source of documentation for programming our robots.
 
-If you're switching over  from ROBOTC, take a look at this page: [Getting Started With VEX Coding Studio](Getting Started With VEX Coding Studio.md)
+If you're switching over  from ROBOTC, take a look at this page: [Getting Started With VEX Coding Studio](Getting Started With VEX Coding Studio)
 
 Programming Slack channel: https://seaquamrobotics.slack.com/messages/CCPLG0N8K/
 
